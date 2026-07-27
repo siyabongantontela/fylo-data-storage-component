@@ -1,1 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
+@theme {
+
+    /*Primary Colors*/
+    --background-gradient: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+
+    /*Neutral Colors*/
+    --blue-200: hsl(243, 100%, 93%);
+    --greyish-blue: hsl(229, 7%, 55%);
+    --blue-850: hsl(228, 56%, 26%);
+    --blue-950: hsl(229, 57%, 11%);
+
+}

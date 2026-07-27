@@ -1,4 +1,5 @@
 /*! tailwindcss v4.3.3 | MIT License | https://tailwindcss.com */
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
@@ -10,6 +11,8 @@
       "Courier New", monospace;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
+    --blue-200: hsl(243, 100%, 93%);
+    --blue-950: hsl(229, 57%, 11%);
   }
 }
 @layer base {
@@ -169,6 +172,33 @@
   }
   .table {
     display: table;
+  }
+  .bg-\(--blue-950\) {
+    background-color: var(--blue-950);
+  }
+  .bg-\[--blue-9\] {
+    background-color: --blue-9;
+  }
+  .bg-\[--blue-95\] {
+    background-color: --blue-95;
+  }
+  .bg-\[--blue-200\] {
+    background-color: --blue-200;
+  }
+  .bg-\[--blue-950\] {
+    background-color: --blue-950;
+  }
+  .bg-\[--blue-\] {
+    background-color: --blue-;
+  }
+  .bg-\[url\(\)\] {
+    background-image: url();
+  }
+  .bg-\[url\(\.\/fylo-data-storage-component-master\/images\/bg-desktop\.png\)\] {
+    background-image: url(./fylo-data-storage-component-master/images/bg-desktop.png);
+  }
+  .bg-\[url\(fylo-data-storage-component-master\/images\/bg-desktop\.png\)\] {
+    background-image: url(fylo-data-storage-component-master/images/bg-desktop.png);
   }
   .outline {
     outline-style: var(--tw-outline-style);
