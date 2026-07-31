@@ -9,12 +9,9 @@
       "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-blue-50: oklch(97% 0.014 254.604);
-    --color-blue-950: oklch(28.2% 0.091 267.935);
     --color-white: #fff;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
-    --blue-850: hsl(228, 56%, 26%);
     --blue-950: hsl(229, 57%, 11%);
   }
 }
@@ -173,6 +170,9 @@
   .contents {
     display: contents;
   }
+  .grid {
+    display: grid;
+  }
   .table {
     display: table;
   }
@@ -181,12 +181,6 @@
   }
   .bg-\(--blue-950\) {
     background-color: var(--blue-950);
-  }
-  .bg-blue-950 {
-    background-color: var(--color-blue-950);
-  }
-  .bg-\[url\(\.\/fylo-data-storage-component-master\/images\/bg-desktop\.png\)\] {
-    background-image: url(./fylo-data-storage-component-master/images/bg-desktop.png);
   }
   .bg-\[url\(\/fylo-data-storage-component-master\/images\/bg-desktop\.png\)\] {
     background-image: url(/fylo-data-storage-component-master/images/bg-desktop.png);
