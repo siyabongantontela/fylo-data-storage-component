@@ -2,13 +2,18 @@
 @import "tailwindcss";
 @theme {
 
-    /*Primary Colors*/
-    --background-gradient: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
-
     /*Neutral Colors*/
     --blue-200: hsl(243, 100%, 93%);
     --greyish-blue: hsl(229, 7%, 55%);
     --blue-850: hsl(228, 56%, 26%);
     --blue-950: hsl(229, 57%, 11%);
 
+    /*Font*/
+    --font-display: "Raleway", sans-serif;
+
+}
+
+@utility background-gradient {
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    
 }

@@ -9,29 +9,31 @@
 </head>
 
 <body
-    class="bg-(--blue-950) bg-[url(/fylo-data-storage-component-master/images/bg-desktop.png)] bg-no-repeat bg-bottom h-lvh">
-    <main class="grid grid-co">
-        <section>
-            <p><img src="./fylo-data-storage-component-master/images/logo.svg" alt="fylo logo svg"></p>
-            <p><img src="./fylo-data-storage-component-master/images/icon-document.svg" alt="document icon svg"></p>
-            <p>
-                <img src="./fylo-data-storage-component-master/images/icon-folder.svg" alt="folder icon svg">
-            </p>
-            <p>
-                <img src="./fylo-data-storage-component-master/images/icon-upload.svg" alt="upload icon svg">
-            </p>
+    class="bg-(--blue-950) bg-[url(/fylo-data-storage-component-master/images/bg-desktop.png)] bg-no-repeat bg-bottom h-lvh flex justify-center items-center">
+    <main class="grid grid-cols-12 w-4xl gap-7">
+        <section class="col-span-5 row-span-2 bg-(--blue-850) p-10 rounded-tr-[100px] rounded-xl">
+            <p class="mb-9"><img src="./fylo-data-storage-component-master/images/logo.svg" alt="fylo logo svg"></p>
+            <div class="flex gap-4">
+                <p class="flex bg-(--blue-950) p-4 justify-center items-center rounded-lg"><img src="./fylo-data-storage-component-master/images/icon-document.svg" alt="document icon svg"></p>
+                <p class="flex bg-(--blue-950) p-4 justify-center items-center rounded-lg">
+                    <img src="./fylo-data-storage-component-master/images/icon-folder.svg" alt="folder icon svg">
+                </p>
+                <p class="flex bg-(--blue-950) p-4 justify-self-center items-center rounded-lg">
+                    <img src="./fylo-data-storage-component-master/images/icon-upload.svg" alt="upload icon svg">
+                </p> 
+            </div>
         </section>
-        <section>
-            <p class="text-white">You've used <span>815GB</span> of your storage</p>
-            <div>
-                <div> <!--outer rectangle-->
-                    <div> <!-- gradient inner rectangle-->
-                        <div></div> <!-- inner white circle -->
+        <section class="col-start-6 col-end-13 row-start-2 row-end-3 bg-(--blue-850) px-10 py-10 rounded-xl">
+            <p class="text-white font-display mb-5 font-light">You've used <span class="font-bold">815GB</span> of your storage</p>
+            <div class="w-full">
+                <div class="w-full h-4 bg-(--blue-950) flex items-center rounded-full mb-2 px-0.5"> <!--outer rectangle-->
+                    <div class="w-3/4 h-3 background-gradient flex items-center justify-end rounded-full px-0.5"> <!-- gradient inner rectangle-->
+                        <div class="bg-white w-2 h-2 rounded-full"></div> <!-- inner white circle -->
                     </div>
                 </div>
-                <ul class="text-white">
-                    <li>0GB</li>
-                    <li>1000GB</li>
+                <ul class="text-white flex justify-between font-display font-medium">
+                    <li>0<span class="ml-1">GB</span></li>
+                    <li>1000<span class="ml-1">GB</span></li>
                 </ul>
             </div>
         </section>
