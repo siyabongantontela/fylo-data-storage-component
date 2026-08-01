@@ -8,22 +8,25 @@
     <title>Fylo Data Storage Component</title>
 </head>
 <style>
-    .bubble-tail {
-        position: absolute;
-        bottom: -9px;
-        left: 196px;
-        width: 0;
-        height: 0;
-        border-left: 20px solid transparent;
-        border-right: 0px solid transparent;
-        border-top: 18px solid white;
+    @media screen and (min-width: 768px) {
+        .bubble-tail {
+            position: absolute;
+            bottom: -9px;
+            left: 196px;
+            width: 0;
+            height: 0;
+            border-left: 20px solid transparent;
+            border-right: 0px solid transparent;
+            border-top: 18px solid white;
+        }
     }
 </style>
 
 <body
-    class="bg-(--blue-950) bg-[url(/fylo-data-storage-component-master/images/bg-desktop.png)] bg-no-repeat bg-bottom h-lvh flex justify-center items-center font-display">
-    <main class="grid grid-cols-12 w-5xl gap-7 relative">
-        <section class="col-span-5 row-span-2 bg-(--blue-850) p-10 rounded-tr-[100px] rounded-xl">
+    class="bg-(--blue-950) bg-[url(/fylo-data-storage-component-master/images/bg-mobile.png)] md:bg-[url(/fylo-data-storage-component-master/images/bg-desktop.png)] bg-no-repeat bg-center bg-fill md:bg-bottom h-lvh flex justify-center items-center font-display">
+    <main class="grid md:grid-cols-12 md:w-5xl gap-7 relative">
+        <section
+            class="col-span-1 grow-0 md:col-span-5 md:row-span-2 bg-(--blue-850) p-10 rounded-tr-[100px] rounded-xl">
             <p class="mb-9"><img src="./fylo-data-storage-component-master/images/logo.svg" alt="fylo logo svg"></p>
             <div class="flex gap-4">
                 <p class="flex bg-(--blue-950) p-4 justify-center items-center rounded-lg"><img
@@ -36,7 +39,8 @@
                 </p>
             </div>
         </section>
-        <section class="col-start-6 col-end-13 row-start-2 row-end-3 bg-(--blue-850) px-12 py-10 rounded-xl">
+        <section
+            class="col-span-1 grow-0 md:col-start-6 md:col-end-13 row-start-2 row-end-3 bg-(--blue-850) px-12 py-10 pt-12 pb-15 rounded-xl relative">
             <p class="text-white mb-5 font-light">You've used <span class="font-bold">815GB</span> of your
                 storage</p>
             <div class="w-full">
@@ -52,14 +56,13 @@
                     <li>1000<span class="ml-1">GB</span></li>
                 </ul>
             </div>
+            <aside
+                class="md:w-54 flex bg-white justify-center items-center py-5 gap-3 rounded-xl absolute top-40 right-20 md:absolute md:right-12 md:-top-14 p-4">
+                <p class="font-bold text-5xl">185</p>
+                <p class="uppercase text-(--greyish-blue) text-base">gb left</p>
+                <div class="bubble-tail"></div>
+            </aside>
         </section>
-        <aside
-            class="w-54 flex bg-white justify-center items-center py-5 gap-3 rounded-xl absolute right-14 -top-5 max-w-sm p-4 z-10">
-            <p class="font-bold text-5xl">185</p>
-            <p class="uppercase text-(--greyish-blue) text-base">gb left</p>
-            <div class="bubble-tail"></div>
-        </aside>
     </main>
 </body>
-
 </html>

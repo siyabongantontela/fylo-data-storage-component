@@ -14,6 +14,7 @@
     --spacing: 0.25rem;
     --container-2xs: 18rem;
     --container-sm: 24rem;
+    --container-3xl: 48rem;
     --container-4xl: 56rem;
     --container-5xl: 64rem;
     --text-base: 1rem;
@@ -30,6 +31,7 @@
     --radius-4xl: 2rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
+    --blue-200: hsl(243, 100%, 93%);
     --greyish-blue: hsl(229, 7%, 55%);
     --blue-850: hsl(228, 56%, 26%);
     --blue-950: hsl(229, 57%, 11%);
@@ -215,6 +217,12 @@
   .-top-18 {
     top: calc(var(--spacing) * -18);
   }
+  .-top-40 {
+    top: calc(var(--spacing) * -40);
+  }
+  .-top-50 {
+    top: calc(var(--spacing) * -50);
+  }
   .top-0 {
     top: 0px;
   }
@@ -254,6 +262,12 @@
   .right-1 {
     right: var(--spacing);
   }
+  .right-2 {
+    right: calc(var(--spacing) * 2);
+  }
+  .right-3 {
+    right: calc(var(--spacing) * 3);
+  }
   .right-5 {
     right: calc(var(--spacing) * 5);
   }
@@ -278,8 +292,17 @@
   .right-18 {
     right: calc(var(--spacing) * 18);
   }
+  .right-20 {
+    right: calc(var(--spacing) * 20);
+  }
+  .right-25 {
+    right: calc(var(--spacing) * 25);
+  }
   .right-28 {
     right: calc(var(--spacing) * 28);
+  }
+  .right-30 {
+    right: calc(var(--spacing) * 30);
   }
   .right-38 {
     right: calc(var(--spacing) * 38);
@@ -329,17 +352,101 @@
   .right-90 {
     right: calc(var(--spacing) * 90);
   }
+  .-bottom-0 {
+    bottom: 0px;
+  }
+  .-bottom-1 {
+    bottom: calc(var(--spacing) * -1);
+  }
   .-bottom-3 {
     bottom: calc(var(--spacing) * -3);
   }
+  .-bottom-10 {
+    bottom: calc(var(--spacing) * -10);
+  }
+  .-bottom-15 {
+    bottom: calc(var(--spacing) * -15);
+  }
+  .-bottom-20 {
+    bottom: calc(var(--spacing) * -20);
+  }
+  .-bottom-40 {
+    bottom: calc(var(--spacing) * -40);
+  }
+  .-bottom-50 {
+    bottom: calc(var(--spacing) * -50);
+  }
+  .-bottom-55 {
+    bottom: calc(var(--spacing) * -55);
+  }
+  .-bottom-60 {
+    bottom: calc(var(--spacing) * -60);
+  }
+  .-bottom-560 {
+    bottom: calc(var(--spacing) * -560);
+  }
+  .bottom-0 {
+    bottom: 0px;
+  }
+  .bottom-1 {
+    bottom: var(--spacing);
+  }
+  .bottom-3 {
+    bottom: calc(var(--spacing) * 3);
+  }
+  .bottom-5 {
+    bottom: calc(var(--spacing) * 5);
+  }
+  .bottom-10 {
+    bottom: calc(var(--spacing) * 10);
+  }
+  .bottom-50 {
+    bottom: calc(var(--spacing) * 50);
+  }
+  .bottom-80 {
+    bottom: calc(var(--spacing) * 80);
+  }
+  .bottom-100 {
+    bottom: calc(var(--spacing) * 100);
+  }
+  .left-0 {
+    left: 0px;
+  }
+  .left-1 {
+    left: var(--spacing);
+  }
+  .left-3 {
+    left: calc(var(--spacing) * 3);
+  }
   .left-6 {
     left: calc(var(--spacing) * 6);
+  }
+  .left-10 {
+    left: calc(var(--spacing) * 10);
+  }
+  .left-15 {
+    left: calc(var(--spacing) * 15);
+  }
+  .left-18 {
+    left: calc(var(--spacing) * 18);
+  }
+  .left-20 {
+    left: calc(var(--spacing) * 20);
+  }
+  .left-30 {
+    left: calc(var(--spacing) * 30);
+  }
+  .left-50 {
+    left: calc(var(--spacing) * 50);
   }
   .left-52 {
     left: calc(var(--spacing) * 52);
   }
   .z-10 {
     z-index: 10;
+  }
+  .col-span-1 {
+    grid-column: span 1 / span 1;
   }
   .col-span-2 {
     grid-column: span 2 / span 2;
@@ -383,6 +490,9 @@
   .row-span-2 {
     grid-row: span 2 / span 2;
   }
+  .row-start-1 {
+    grid-row-start: 1;
+  }
   .row-start-2 {
     grid-row-start: 2;
   }
@@ -397,6 +507,15 @@
   }
   .mr-6 {
     margin-right: calc(var(--spacing) * 6);
+  }
+  .-mb-18 {
+    margin-bottom: calc(var(--spacing) * -18);
+  }
+  .-mb-20 {
+    margin-bottom: calc(var(--spacing) * -20);
+  }
+  .-mb-180 {
+    margin-bottom: calc(var(--spacing) * -180);
   }
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
@@ -473,6 +592,9 @@
   .w-2xs {
     width: var(--container-2xs);
   }
+  .w-3 {
+    width: calc(var(--spacing) * 3);
+  }
   .w-3\/4 {
     width: calc(3 / 4 * 100%);
   }
@@ -503,8 +625,35 @@
   .w-full {
     width: 100%;
   }
+  .w-sm {
+    width: var(--container-sm);
+  }
+  .max-w-5xl {
+    max-width: var(--container-5xl);
+  }
   .max-w-sm {
     max-width: var(--container-sm);
+  }
+  .min-w-3xl {
+    min-width: var(--container-3xl);
+  }
+  .flex-grow {
+    flex-grow: 1;
+  }
+  .grow {
+    flex-grow: 1;
+  }
+  .grow-0 {
+    flex-grow: 0;
+  }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .resize {
+    resize: both;
+  }
+  .grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
   .grid-cols-6 {
     grid-template-columns: repeat(6, minmax(0, 1fr));
@@ -636,6 +785,10 @@
   .rounded-tr-full {
     border-top-right-radius: calc(infinity * 1px);
   }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
   .border-x-8 {
     border-inline-style: var(--tw-border-style);
     border-inline-width: 8px;
@@ -671,6 +824,18 @@
   .bg-\(--950\) {
     background-color: var(--950);
   }
+  .bg-\(--blue-0\) {
+    background-color: var(--blue-0);
+  }
+  .bg-\(--blue-20\) {
+    background-color: var(--blue-20);
+  }
+  .bg-\(--blue-90\) {
+    background-color: var(--blue-90);
+  }
+  .bg-\(--blue-200\) {
+    background-color: var(--blue-200);
+  }
   .bg-\(--blue-850\) {
     background-color: var(--blue-850);
   }
@@ -679,6 +844,12 @@
   }
   .bg-\(--blue950\) {
     background-color: var(--blue950);
+  }
+  .bg-\[ur\] {
+    background-color: ur;
+  }
+  .bg-\[url\] {
+    background-color: url;
   }
   .bg-slate-800 {
     background-color: var(--color-slate-800);
@@ -689,11 +860,101 @@
   .background-gradient {
     background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
   }
+  .bg-\[url\(\)\] {
+    background-image: url();
+  }
+  .bg-\[url\(\/\)\] {
+    background-image: url(/);
+  }
+  .bg-\[url\(\/fy\)\] {
+    background-image: url(/fy);
+  }
+  .bg-\[url\(\/fylo\)\] {
+    background-image: url(/fylo);
+  }
+  .bg-\[url\(\/fylo-d\)\] {
+    background-image: url(/fylo-d);
+  }
+  .bg-\[url\(\/fylo-data\)\] {
+    background-image: url(/fylo-data);
+  }
+  .bg-\[url\(\/fylo-data-\)\] {
+    background-image: url(/fylo-data-);
+  }
+  .bg-\[url\(\/fylo-data-st\)\] {
+    background-image: url(/fylo-data-st);
+  }
+  .bg-\[url\(\/fylo-data-stor\)\] {
+    background-image: url(/fylo-data-stor);
+  }
+  .bg-\[url\(\/fylo-data-stora\)\] {
+    background-image: url(/fylo-data-stora);
+  }
+  .bg-\[url\(\/fylo-data-storage\)\] {
+    background-image: url(/fylo-data-storage);
+  }
+  .bg-\[url\(\/fylo-data-storage-\)\] {
+    background-image: url(/fylo-data-storage-);
+  }
+  .bg-\[url\(\/fylo-data-storage-co\)\] {
+    background-image: url(/fylo-data-storage-co);
+  }
+  .bg-\[url\(\/fylo-data-storage-com\)\] {
+    background-image: url(/fylo-data-storage-com);
+  }
+  .bg-\[url\(\/fylo-data-storage-componen\)\] {
+    background-image: url(/fylo-data-storage-componen);
+  }
+  .bg-\[url\(\/fylo-data-storage-component\)\] {
+    background-image: url(/fylo-data-storage-component);
+  }
+  .bg-\[url\(\/fylo-data-storage-component-\)\] {
+    background-image: url(/fylo-data-storage-component-);
+  }
+  .bg-\[url\(\/fylo-data-storage-component-master\)\] {
+    background-image: url(/fylo-data-storage-component-master);
+  }
+  .bg-\[url\(\/fylo-data-storage-component-master\/images\)\] {
+    background-image: url(/fylo-data-storage-component-master/images);
+  }
+  .bg-\[url\(\/fylo-data-storage-component-master\/images\/\)\] {
+    background-image: url(/fylo-data-storage-component-master/images/);
+  }
+  .bg-\[url\(\/fylo-data-storage-component-master\/images\/bg\)\] {
+    background-image: url(/fylo-data-storage-component-master/images/bg);
+  }
+  .bg-\[url\(\/fylo-data-storage-component-master\/images\/bg-\)\] {
+    background-image: url(/fylo-data-storage-component-master/images/bg-);
+  }
+  .bg-\[url\(\/fylo-data-storage-component-master\/images\/bg-\,\)\] {
+    background-image: url(/fylo-data-storage-component-master/images/bg-,);
+  }
   .bg-\[url\(\/fylo-data-storage-component-master\/images\/bg-desktop\.png\)\] {
     background-image: url(/fylo-data-storage-component-master/images/bg-desktop.png);
   }
+  .bg-\[url\(\/fylo-data-storage-component-master\/images\/bg-mobi\)\] {
+    background-image: url(/fylo-data-storage-component-master/images/bg-mobi);
+  }
+  .bg-\[url\(\/fylo-data-storage-component-master\/images\/bg-mobile\)\] {
+    background-image: url(/fylo-data-storage-component-master/images/bg-mobile);
+  }
+  .bg-\[url\(\/fylo-data-storage-component-master\/images\/bg-mobile\.pn\)\] {
+    background-image: url(/fylo-data-storage-component-master/images/bg-mobile.pn);
+  }
+  .bg-\[url\(\/fylo-data-storage-component-master\/images\/bg-mobile\.png\)\] {
+    background-image: url(/fylo-data-storage-component-master/images/bg-mobile.png);
+  }
+  .bg-contain {
+    background-size: contain;
+  }
+  .bg-cover {
+    background-size: cover;
+  }
   .bg-bottom {
     background-position: bottom;
+  }
+  .bg-center {
+    background-position: center;
   }
   .bg-no-repeat {
     background-repeat: no-repeat;
@@ -719,11 +980,17 @@
   .p-12 {
     padding: calc(var(--spacing) * 12);
   }
+  .px-0 {
+    padding-inline: 0px;
+  }
   .px-0\.5 {
     padding-inline: calc(var(--spacing) * 0.5);
   }
   .px-1 {
     padding-inline: var(--spacing);
+  }
+  .px-4 {
+    padding-inline: calc(var(--spacing) * 4);
   }
   .px-10 {
     padding-inline: calc(var(--spacing) * 10);
@@ -748,6 +1015,24 @@
   }
   .py-12 {
     padding-block: calc(var(--spacing) * 12);
+  }
+  .pt-12 {
+    padding-top: calc(var(--spacing) * 12);
+  }
+  .pb-1 {
+    padding-bottom: var(--spacing);
+  }
+  .pb-2 {
+    padding-bottom: calc(var(--spacing) * 2);
+  }
+  .pb-15 {
+    padding-bottom: calc(var(--spacing) * 15);
+  }
+  .pb-20 {
+    padding-bottom: calc(var(--spacing) * 20);
+  }
+  .pb-24 {
+    padding-bottom: calc(var(--spacing) * 24);
   }
   .font-display {
     font-family: var(--font-display);
@@ -784,6 +1069,9 @@
   }
   .uppercase {
     text-transform: uppercase;
+  }
+  .underline {
+    text-decoration-line: underline;
   }
   .outline {
     outline-style: var(--tw-outline-style);
@@ -822,6 +1110,106 @@
   .after\:content-\[\'\'\]::after {
     --tw-content: '';
     content: var(--tw-content);
+  }
+  @media (width >= 40rem) {
+    .sm\:absolute {
+      position: absolute;
+    }
+    .sm\:-top-5 {
+      top: calc(var(--spacing) * -5);
+    }
+    .sm\:-top-14 {
+      top: calc(var(--spacing) * -14);
+    }
+    .sm\:right-12 {
+      right: calc(var(--spacing) * 12);
+    }
+    .sm\:right-14 {
+      right: calc(var(--spacing) * 14);
+    }
+    .sm\:col-start-6 {
+      grid-column-start: 6;
+    }
+    .sm\:w-54 {
+      width: calc(var(--spacing) * 54);
+    }
+    .sm\:bg-\[url\(\/fylo-data-storage-component-master\/images\/bg-desktop\.png\)\] {
+      background-image: url(/fylo-data-storage-component-master/images/bg-desktop.png);
+    }
+  }
+  @media (width >= 48rem) {
+    .md\:absolute {
+      position: absolute;
+    }
+    .md\:-top-1 {
+      top: calc(var(--spacing) * -1);
+    }
+    .md\:-top-5 {
+      top: calc(var(--spacing) * -5);
+    }
+    .md\:-top-10 {
+      top: calc(var(--spacing) * -10);
+    }
+    .md\:-top-12 {
+      top: calc(var(--spacing) * -12);
+    }
+    .md\:-top-14 {
+      top: calc(var(--spacing) * -14);
+    }
+    .md\:-top-15 {
+      top: calc(var(--spacing) * -15);
+    }
+    .md\:right-1 {
+      right: var(--spacing);
+    }
+    .md\:right-12 {
+      right: calc(var(--spacing) * 12);
+    }
+    .md\:right-14 {
+      right: calc(var(--spacing) * 14);
+    }
+    .md\:col-span-5 {
+      grid-column: span 5 / span 5;
+    }
+    .md\:col-start-6 {
+      grid-column-start: 6;
+    }
+    .md\:col-end-13 {
+      grid-column-end: 13;
+    }
+    .md\:row-span-2 {
+      grid-row: span 2 / span 2;
+    }
+    .md\:row-start-2 {
+      grid-row-start: 2;
+    }
+    .md\:row-end-3 {
+      grid-row-end: 3;
+    }
+    .md\:w-5xl {
+      width: var(--container-5xl);
+    }
+    .md\:w-54 {
+      width: calc(var(--spacing) * 54);
+    }
+    .md\:grid-cols-12 {
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+    }
+    .md\:bg-\[url\(\/fylo-data-storage-component-master\/images\/bg-desktop\.png\)\] {
+      background-image: url(/fylo-data-storage-component-master/images/bg-desktop.png);
+    }
+    .md\:bg-bottom {
+      background-position: bottom;
+    }
+    .md\:bg-no-repeat {
+      background-repeat: no-repeat;
+    }
+    .md\:p-4 {
+      padding: calc(var(--spacing) * 4);
+    }
+    .md\:px-12 {
+      padding-inline: calc(var(--spacing) * 12);
+    }
   }
 }
 @property --tw-border-style {
